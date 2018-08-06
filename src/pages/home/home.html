@@ -1,14 +1,33 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Cep
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <ion-input type="text" placeholder="Logradouro" [(ngModel)]="local.logradouro"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Complemento" [(ngModel)]="local.complemento"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Bairro" [(ngModel)]="local.bairro"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Cidade" [(ngModel)]="local.localidade"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="Estado" [(ngModel)]="local.uf"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="CEP" [(ngModel)]="local.cep"></ion-input>
+  </ion-item>
+  <ion-item>
+    <button (click)="buscaCEP()" ion-button full>
+      Clique
+    </button>
+  </ion-item>
 </ion-content>
